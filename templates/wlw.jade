@@ -1,0 +1,90 @@
+doctype html
+html
+  include _layout/head
+  body
+    include _layout/nav
+    .row
+      .col.hoverable.center.s12.wlw-top-msg
+        .wlw-title.left-align 物联网
+          .mon-desc 物联网给予计算机平台的智能网络，可以依据传感器网络用获取的数据进行决策
+        img.responsive-img.wlw-head-img(src='../img/wlw/wlw_03.png')
+    .container
+      .row
+        .col.s12.m9.l9.mon-comm
+          h5 物联网
+          p 物联网基于云计算平台和智能网络，可以依据传感器用获取的数据进行决策，改变对象的行为控制和反馈，利用互联网等通信技术把传感器、控制器、机器、人员和一切设备通过信的方式联在一起，形成人与设备、设备与设备相联，实现信息化、远程管理控制和智能化网络
+          img.responsive-img(src='../img/wlw/wlw_06.png')
+      .row
+        .col.s12.m9.l9.mon-comm
+          h5 功能
+      .row.wlw_co_w
+        .col.s12.m6.l6
+          div
+            .spr
+              //img.responsive-img(src='../img/wlw/wlw_gn_1.png')
+            .spr-msg
+              h6 消息分发
+              p 基于mqtt协议，消息分发能力强大
+        .col.s12.m6.l6
+          div
+            .spr.spr-2
+              //img.responsive-img(src='../img/wlw/wlw_gn_1.png')
+            .spr-msg
+              h6 事件警告
+              p 操作简单，用户可自定义告警触发机制，保证准确迅速
+        .col.s12.m6.l6
+          div
+            .spr.spr-3
+              //img.responsive-img(src='../img/wlw/wlw_gn_1.png')
+            .spr-msg
+              h6 数据分析
+              p 基于mqtt协议，消息分发能力强大
+        .col.s12.m6.l6
+          div
+            .spr.spr-4
+              //img.responsive-img(src='../img/wlw/wlw_gn_1.png')
+            .spr-msg
+              h6 海量连接
+              p 基于mqtt协议，消息分发能力强大
+      .row
+        .col.s12.m9.l9.mon-comm
+          h5 特色
+      .row.wlw_co_w
+        .col.s12.m6.l6
+          div
+            .spr
+              //img.responsive-img(src='../img/wlw/wlw_gn_1.png')
+            .spr-msg
+              h6 开放API
+              p 开放平台API，免费接入与调用
+        .col.s12.m6.l6
+          div
+            .spr.spr-2
+              //img.responsive-img(src='../img/wlw/wlw_gn_1.png')
+            .spr-msg
+              h6 开放设备协议
+              p 开放设备协议，开源才能进步。准确迅速
+        .col.s12.m6.l6
+          div
+            .spr.spr-3
+              //img.responsive-img(src='../img/wlw/wlw_gn_1.png')
+            .spr-msg
+              h6 免费公共平台
+              p 所有人都能接入与使用平台
+        .col.s12.m6.l6
+          div
+            .spr.spr-4
+              //img.responsive-img(src='../img/wlw/wlw_gn_1.png')
+            .spr-msg
+              h6 数据安全
+              p 多年数据维护经验，数据安全有保障。
+
+
+
+    include _layout/footer
+    script.
+      $(document).ready(function () {
+        $("nav").css({
+          "background-color": "#4385f5"
+        });
+      });

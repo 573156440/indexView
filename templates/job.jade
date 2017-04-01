@@ -1,0 +1,123 @@
+doctype html
+html
+  include _layout/head
+  body
+    include _layout/nav
+    .container.container-job-top
+      .row
+        .col.s12.m12.l12
+          .card.job-card
+            .card-content
+              .row
+                .col.s12.m4.l4.center
+                  img.job-img(src='../img/logo3.png')
+                .col.s12.m8.l8.white-text
+                  .card-content.job-text
+                    span.card-title "智慧云平台，数据见未来"
+                    p 深圳云联讯数据科技有限公司(简称"云联讯")，创立于2012年，是一家专注于数据中心市场，提供数据中心基础设施管理解决方案、产品及服务的高新技术企业。公司提供的数据中心管理解决方案，广泛应用于金融、政府、通信、交通、能源、医疗、教育、互联网等各个行业。
+                  .right
+                    span 简历请发送至：dow@clcdata.com
+      .row
+        .col.s12.m12.l12
+          span.job-title 人才招聘*Talent recruitment
+      .row
+        .col.s12.m12.l12
+          ul.collapsible(data-collapsible="accordion")
+            li
+              .collapsible-header.job-ext-css
+                .col.s5.m2.l2
+                  .job-web-left
+                    h5.job-web-h5.center-align.white-text WEB
+                .col.s7.m10.l10
+                  .card-content.job-web-text
+                    span.job-web-text-span Web开发工程师
+                    p.job-web-text-p
+                      | 2016-08-17 深圳市南山区
+                      br
+                      | 岗位类别:研发类 招聘人数:1
+              .collapsible-body
+                p web 前端攻城狮
+      .row
+        .col.s12.m12.l12
+          ul.collapsible(data-collapsible="accordion")
+            li
+              .collapsible-header.job-ext-css
+                .col.s5.m2.l2
+                  .job-web-left
+                    h5.job-web-h5.center-align.white-text NODE.JS
+                .col.s7.m10.l10
+                  .card-content.job-web-text
+                    span.job-web-text-span Nodejs开发工程师
+                    p.job-web-text-p
+                      | 2016-08-17 深圳市南山区
+                      br
+                      | 岗位类别:研发类 招聘人数:1
+              .collapsible-body
+                p Nodejs 开发攻城狮
+      .row
+        .col.s12.m12.l12
+          ul.collapsible(data-collapsible="accordion")
+            li
+              .collapsible-header.job-ext-css
+                .col.s5.m2.l2
+                  .job-web-left
+                    h5.job-web-h5.center-align.white-text UI
+                .col.s7.m10.l10
+                  .card-content.job-web-text
+                    span.job-web-text-span Ui设计工程师
+                    p.job-web-text-p
+                      | 2016-08-17 深圳市南山区
+                      br
+                      | 岗位类别:研发类 招聘人数:1
+              .collapsible-body
+                p UI 设计攻城狮
+      .row
+        .col.s12.m12.l12
+          ul.collapsible(data-collapsible="accordion")
+            li
+              .collapsible-header.job-ext-css
+                .col.s5.m2.l2
+                  .job-web-left
+                    h5.job-web-h5.center-align.white-text Android
+                .col.s7.m10.l10
+                  .card-content.job-web-text
+                    span.job-web-text-span Android 工程师
+                    p.job-web-text-p
+                      | 2016-08-17 深圳市南山区
+                      br
+                      | 岗位类别:研发类 招聘人数:1
+              .collapsible-body
+                p Android 开发工程师
+      .row
+        .col.s12.m12.l12
+          span.job-title 常见问题*Common problem
+      .row
+        .col.s12.m12.l12
+          .card-panel.white.job-web-text-p
+            div.section
+              span Q 云联讯主要做什么？
+              p A 提供的数据中心管理解决方案广泛应用于金融、政府、通信、交通、能源、医疗、教育、互联网等各行各业。
+            div.section
+              span Q 公司联系方式和具体坐标？
+              p A&nbsp;&nbsp;地址：深圳市南山区讯美大厦1栋9楼
+              p &nbsp;&nbsp;&nbsp;&nbsp;邮箱：dow@clcdata.com
+              p &nbsp;&nbsp;&nbsp;&nbsp;售后电话：15989443381
+            div.section
+              span Q 我想要与云联讯合作的事件，我要找谁联系？
+              p
+                | A&nbsp;
+                a(href='mailto:dow@clcdata.com') dow@clcdata.com
+                | &nbsp;详情了解
+            div.section
+              span Q 我有一个如何让云联讯更好的想法，我要找谁联系？
+              p
+                | A&nbsp;
+                a(href='mailto:dow@clcdata.com') dow@clcdata.com
+                | &nbsp;详情了解
+    include _layout/footer
+    script.
+      $(document).ready(function () {
+        $('.collapsible').collapsible({
+          accordion: false
+        });
+      });

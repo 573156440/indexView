@@ -1,0 +1,81 @@
+doctype html
+html
+  include templates/_layout/head
+
+  body
+    include templates/_layout/nav
+    .row
+      .col.center.s12.datacenter-one
+        .mon-title.left-align 数据中心运维
+          .mon-desc 全方位实时有效的监控系统,着重监控数据
+        img.responsive-img.datacenter-one-img(src='img/datacenter/one.jpg')
+    .container
+      .row
+        .col.s12.m9.l9.mon-comm
+          h5 数据中心整体运维服务
+          span.block.text-indent-2 云联讯数据中心的运维管理从数据中心的日常监控入手，事件管理、变更管理、应急预案管理和日常维护管理等方面全方
+            | 位地进行数据中心的日常监控。 有完整的、全方位实时有效的监控系统，并着重监控数据的记录和数据智能分析，实现提
+            | 前发现问题、消除隐患。
+      .row
+        .col.s12.m9.l9.mon-comm
+          h5 数据中心运维现状？
+          span.block.text-indent-2 随着IT技术的高速发展，IT设备的复杂程度也在不断加大，当前国内企业的信息化建设正处在深化、整合、转型与创新发
+            | 展的关键时期，IT规模越来越庞大，IT系统越来越复杂，给后续的运营维护带来巨大挑战。
+      .row
+        .col.s12.m9.l9.mon-comm
+          h5 产品功能
+      .row
+        .col.s12.m9.l9.mon-comm
+          img.responsive-img(src='img/datacenter/two.png')
+      .row
+        .col.s12.m9.l9.mon-comm
+          img.responsive-img(src='img/datacenter/three.jpg')
+      .row
+        .col.s12.m9.l9.mon-comm
+          h5 产品特色
+      .row
+        .col.s12.m9.l9.mon-comm
+
+
+    include templates/_layout/footer
+    script.
+      $(document).ready(function () {
+        $(".button-collapse").sideNav();
+        $("nav").css({
+          "background-color":"#b9e7e8"
+        });
+      });
+<ul class="collection">
+<li class="collection-item avatar">
+<img src="images/yuna.jpg" alt="" class="circle">
+<span class="title">Title</span>
+<p>First Line <br>
+Second Line
+</p>
+<a href="#!" class="secondary-content"><i class="mdi-action-grade"></i></a>
+</li>
+<li class="collection-item avatar">
+<i class="mdi-file-folder circle"></i>
+<span class="title">Title</span>
+<p>First Line <br>
+Second Line
+</p>
+<a href="#!" class="secondary-content"><i class="mdi-action-grade"></i></a>
+</li>
+<li class="collection-item avatar">
+<i class="mdi-action-assessment circle green"></i>
+<span class="title">Title</span>
+<p>First Line <br>
+Second Line
+</p>
+<a href="#!" class="secondary-content"><i class="mdi-action-grade"></i></a>
+</li>
+<li class="collection-item avatar">
+<i class="mdi-av-play-arrow circle red"></i>
+<span class="title">Title</span>
+<p>First Line <br>
+Second Line
+</p>
+<a href="#!" class="secondary-content"><i class="mdi-action-grade"></i></a>
+</li>
+</ul>

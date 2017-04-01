@@ -1,0 +1,41 @@
+doctype html
+html
+  include _layout/head
+    body
+  include _layout/nav
+  .row.about-v-top
+    .col.hoverable.center.s12
+      //.mon-title.left-align CLC
+      //  .mon-desc 物联网讲座视频
+      img.responsive-img.mon-head-img(src='img/about/fp_03.png')
+      .playbutton
+        <svg width="21" height="20" viewBox="0 0 21 20" xmlns="http://www.w3.org/2000/svg" class="icon-playbutton"><path class="_fill-color" d="M10.5 0C4.977 0 .5 4.477.5 10s4.477 10 10 10 10-4.477 10-10-4.477-10-10-10zm-2 14V6l6 4-6 4z" fill="#ffffff" fill-rule="evenodd" opacity="1"/></svg>
+  .container
+    .row
+      .col.s12.m9.l9.about-comm
+        div
+          div.que
+            em Q:&nbsp;&nbsp;
+            span 云联讯主要做什么？
+          p.ans
+            em A:
+            span 提供的数据中心管理解决方案广泛用于金融、政府、通信、交通、能源、医疗、教育、互联网等各行各业。
+        div
+          div.que
+            em Q:&nbsp&nbsp;
+            span 公司联系方式和具体坐标？
+          p.ans
+            em A:
+            span 地址：深圳市南山区讯美大厦1栋9楼
+            br
+            span 邮箱：dow@clcdata.com
+            br
+            span 售后电话：15989443381
+
+  include _layout/footer
+  script.
+    $(document).ready(function () {
+      $("nav").css({
+        "background-color": "#4887F1"
+      });
+    });

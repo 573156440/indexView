@@ -1,0 +1,160 @@
+doctype html
+html
+  include _layout/head
+  body
+    include _layout/nav
+    .row.sHardware-top-banner
+      .col.center.s12
+        .swiper-container.index-swiper-container
+          .swiper-wrapper
+            .swiper-slide
+              img.responsive-img(src='../img/sHardware/sh_02.png')
+            .swiper-slide
+              img.responsive-img(src='../img/sHardware/sh_03.png')
+            .swiper-slide
+              img.responsive-img(src='../img/sHardware/sh_02.png')
+          .swiper-pagination.swiper-pagination-white
+    .container
+      .row
+        .col.s12.m9.l9.sHard-comm
+          h5 方针
+      .row.wlw_co_w
+        .col.s12.m6.l6.sHard-c-m
+          div.clearfix
+            .spr
+              //img.responsive-img(src='../img/wlw/wlw_gn_1.png')
+            .spr-msg
+              h6 材料设计指南
+              p 我们最新版本的视觉设计框架
+        .col.s12.m6.l6.sHard-c-m
+          div
+            .spr.spr-2
+              //img.responsive-img(src='../img/wlw/wlw_gn_1.png')
+            .spr-msg
+              h6 对于穿戴式材料设计
+              p 设计准则和穿戴设备的最佳做法
+        .col.s12.m6.l6.sHard-c-m
+          div
+            .spr.spr-3
+              //img.responsive-img(src='../img/wlw/wlw_gn_1.png')
+            .spr-msg
+              h6 Android的汽车
+              p 为Android汽车新的设计指南
+        .col.s12.m6.l6.sHard-c-m
+          div
+            .spr.spr-4
+              //img.responsive-img(src='../img/wlw/wlw_gn_1.png')
+            .spr-msg
+              h6 Android的电视
+              p 检查出10英寸的最新的Android电视指南
+        .col.s12.m6.l6.sHard-c-m
+          div
+            .spr.spr-4
+              //img.responsive-img(src='../img/wlw/wlw_gn_1.png')
+            .spr-msg
+              h6 纸板
+              p 对于VR最佳实践由谷歌纸板团队创建
+      .row
+        .col.s12.m9.l9.sHard-comm
+          h5 工具
+      .row.wlw_co_w
+        .col.s12.m6.l6.sHard-c-m
+          div
+            .spr
+              //img.responsive-img(src='../img/wlw/wlw_gn_1.png')
+            .spr-msg
+              h6 谷歌字体
+              p 使得网站更加美观，快速，开放，通过漂亮的板式。
+        .col.s12.m6.l6.sHard-c-m
+          div
+            .spr.spr-2
+              //img.responsive-img(src='../img/wlw/wlw_gn_1.png')
+            .spr-msg
+              h6 材料图标
+              p 请访问我们的900多材料系统图标库，了解我们的图标字体
+        .col.s12.m6.l6.sHard-c-m
+          div
+            .spr.spr-3
+              //img.responsive-img(src='../img/wlw/wlw_gn_1.png')
+            .spr-msg
+              h6 设备规格
+              p 上浆，分辨率和更多的跨多个设备的综合资源
+        .col.s12.m6.l6.sHard-c-m
+          div
+            .spr.spr-4
+              //img.responsive-img(src='../img/wlw/wlw_gn_1.png')
+            .spr-msg
+              h6 大小调整
+              p 交互式浏览器，跨桌面，移动和平板电脑可帮助设计人员测试材料设计断点。
+      .row
+        .col.s12.m9.l9.sHard-comm
+          h5 下载
+      .row.wlw_co_w
+        .col.s12.m6.l6.sHard-c-m
+          div
+            .spr
+              //img.responsive-img(src='../img/wlw/wlw_gn_1.png')
+            .spr-msg
+              h6 调色板
+              p 我们的材料设计的调色板可以帮助你扩大你的用户界面色彩搭配，提供各地的小学和口音的颜色指导，以及主题化。
+        .col.s12.m6.l6.sHard-c-m
+          div
+            .spr.spr-2
+              //img.responsive-img(src='../img/wlw/wlw_gn_1.png')
+            .spr-msg
+              h6 布局
+              p 我们得心应手一套设备特定的材料设计模板快速迭代
+        .col.s12.m6.l6.sHard-c-m
+          div
+            .spr.spr-3
+              //img.responsive-img(src='../img/wlw/wlw_gn_1.png')
+            .spr-msg
+              h6 &的Roboto诺托
+              p 获取所有最新的更新和补充，我们的Android字体的Roboto和诺托。
+        .col.s12.m6.l6.sHard-c-m
+          div
+            .spr.spr-4
+              //img.responsive-img(src='../img/wlw/wlw_gn_1.png')
+            .spr-msg
+              h6 贴纸
+              p 我们的贴纸让您轻松上手材料设计的组件，系统图标以及产品图标。
+      .row
+        .col.s12.m9.l9.sHard-comm
+          img.responsive-img(src='../img/sHardware/sh_31.png')
+    include _layout/footer
+    script.
+      $(document).ready(function () {
+        $("nav").css({
+          "background-color": "#5e7b89"
+        });
+      });
+      script.
+        $(function(){
+          var isIE = function(){ //ie?
+            if (!!window.ActiveXObject || "ActiveXObject" in window)
+              return true;
+            else
+              return false;
+          };
+          if(isIE()){
+            console.log('亲，还在用IE~  浏览器试试谷歌吧')
+            $('.logo-img').css('height','1.5rem');
+            $('.swiper-container,.swiper-wrapper,.swiper-slide').css('width','100%');
+          }else{
+            return 0;
+          }
+        });
+    script.
+      $(function () {
+        $(".button-collapse").sideNav();
+        var swiper = new Swiper('.swiper-container', {
+          // Optional parameters
+          loop: true,
+          autoplay: 3000,
+          autoplayDisableOnInteraction: false,
+          pagination: '.swiper-pagination',
+          paginationClickable: true
+        });
+        $(".swiper-pagination-bullet").css({'width':'6px','height':'6px','border-radius':'50%'});
+        $(".swiper-pagination-bullet-active").css({'background-color':'#000'});
+      });

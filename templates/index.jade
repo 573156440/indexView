@@ -1,0 +1,160 @@
+doctype html
+html
+  include _layout/head
+  body
+    include _layout/nav
+    .swiper-container.index-swiper-container
+      .swiper-wrapper
+        .swiper-slide(data-image-l="../img/banner2.jpg" data-image-s="../img/banner-mobile.jpg")
+          img.responsive-img(src='../img/banner2.jpg')
+        .swiper-slide(data-image-l="../img/banner1.jpg" data-image-s="../img/banner-mobile.jpg")
+          img.responsive-img(src='../img/banner1.jpg')
+        .swiper-slide(data-image-l="../img/banner.jpg" data-image-s="../img/banner-mobile.jpg")
+          img.responsive-img(src='../img/banner.jpg')
+      .swiper-pagination.swiper-pagination-white
+    .container.blue-grey.lighten-5.container-fp
+      .row
+        .col.s12.m12.l6
+          a.design-up(href="./about.html")
+            .playbutton
+              <svg width="21" height="20" viewBox="0 0 21 20" xmlns="http://www.w3.org/2000/svg" class="icon-playbutton"><path class="_fill-color" d="M10.5 0C4.977 0 .5 4.477.5 10s4.477 10 10 10 10-4.477 10-10-4.477-10-10-10zm-2 14V6l6 4-6 4z" fill="#ffffff" fill-rule="evenodd" opacity="1"/></svg>
+          a.design-down(href="http://www.clcdata.com")
+            .title_data 设计意见/加入我们
+              .desc 希望云联讯给大家一个设计，需要联系我们邮箱
+            .card-content
+              .card-image
+                img.responsive-img.svg-1.right(src='../img/fp_10.png')
+              //.de-i.design-de-i.clearfix
+              //  .text-black 邮箱/联系
+              //  .arrow.de-i-arrow
+              //    a(href="#")
+              //      img.arrow-img(src='../img/arrow.png')
+        .col.s12.m12.l6.waves-effect.waves-light
+          a(href='./dcim.html')
+            .card(style="background-color:#ff5454")
+              .title_data.title_data_white DCIM第一版本功能（界面/开发）
+                .desc 开发/设计者每个人的资源
+              .dcim-content
+                .card-image
+                  img.responsive-img(src='../img/fp_06.png')
+              .de-i.de-i-m.clearfix
+                .text-white 文/公告
+                .arrow
+                  a(href="#")
+                    img.arrow-img(src='../img/arrow-1.png')
+      .row.row-monitor
+        .col.s12.m12.l6
+          a(href='./monitoring.html')
+            .card.waves-effect.waves-light.card-monitor-w.card-monitor-bg
+              .title_data.white-text 机房动环监控
+                .desc 针对各类机房中的动力设备及环境变量进行集中监控,即:动力环境监控[1].
+              .card-content.white-text.card-size
+                .card-image.img-car.img-monitor
+                  img.responsive-img(src='../img/house.png')
+                  //.text 动力环监监控/(1)
+                  //.arrow
+                  //  a(href="#")
+                  //    img.arrow-img(src='../img/arrow.png')
+              .de-i.moni-i-m.clearfix
+                .text-white 动力环监监控/(1)
+                .arrow
+                  a(href="#")
+                    img.arrow-img(src='../img/arrow-1.png')
+        .col.s12.m12.l6
+          div
+            a(href='./data.html')
+              .card.card-1.card-big.green-1
+                .title_data.title_data_white 数据中心DCIM
+                  .desc 协助数据中心识别,协助数据管理人员
+                .card-content.white-text
+                  .center
+                    img.responsive-img.svg-2(src='../img/svg/dcim-green.svg')
+          div
+            a(href='http://www.clcdata.com')
+              .card.card-small.blue-2.card-monitor-shadow
+                .title_data.title_data_white 设备使用率和使用监控
+                  .desc 集中监控/容量规划/集中管理
+                img.responsive-img.svg-3.right(src='../img/index-1.png')
+      .row
+        .col.s12.m12.l6.waves-effect.waves-light
+          a(href='./energy.html')
+            .card.card-2.yellow-1
+              .title_data 机柜能耗管理
+                .desc 云联讯PM管理平台,提供整合的用户界面进行集中化管理
+              .center
+                img.responsive-img.svg-4(src='../img/svg/energy.svg')
+        .col.s12.m12.l6.waves-effect.waves-light
+          a(href='./datacenter.html')
+            .card.card-2.blue-3
+              .title_data 数据中心运维
+                .desc 有完整的,全方位实时有效的监控系统,并着重监控数据的记录,和数据智能分析,实现提前发现问题
+              .center
+                img.responsive-img.svg-5(src='../img/svg/ops.svg')
+      .row
+        .col.s12.m12.l6.waves-effect.waves-light
+          a(href='./wlw.html')
+            .card.card-2.white-1.fp-wlw-bg
+              .title_data.black-text 物联网
+                .desc 物联网基于云计算平台和智能网络,可以根据传感器网络用获取的数据进行决策
+              //.div
+              img.responsive-img.svg-6.fp-wlw(src='../img/index-2.gif')
+        .col.s12.m12.l6.waves-effect.waves-light
+          a(href='./sHardware.html')
+            .card.card-2.grey-1
+              .title_data.title_data_white 智能硬件
+                .desc 车联网是以车内网、车际网和车载移动互联网为基础,按照约定的通讯协议和数据交互标准。
+              .card-content.new-center
+                .bg-yj
+                  .car-img
+                    img.responsive-img.svg-7(src='../img/index-3.png')
+                  .hardware-img.right
+                    img.responsive-img.svg-8(src='../img/index-4.png')
+    include _layout/footer
+    script.
+      $(function () {
+        var isIE = function () { //ie?
+          if (!!window.ActiveXObject || "ActiveXObject" in window)
+            return true;
+          else
+            return false;
+        };
+        if (isIE()) {
+          console.log('亲，还在用IE~  浏览器试试谷歌吧')
+          $('.logo-img').css('height', '1.5rem');
+          $('html,body,.swiper-container,.swiper-wrapper,.swiper-slide').css('width', '100%');
+        } else {
+          return 0;
+        }
+      });
+    script.
+      $(function () {
+        $(".button-collapse").sideNav();
+        var swiper = new Swiper('.swiper-container', {
+          // Optional parameters
+          loop: true,
+          autoplay: 3000,
+          autoplayDisableOnInteraction: false,
+          pagination: '.swiper-pagination',
+          paginationClickable: true
+        });
+      });
+    script.
+      $(function () { //banner switch(picture) in mobile
+        function resize() {
+          var windowWidth = $(window).width();
+          console.log(windowWidth);
+          var isSmallScreen = windowWidth < 600;
+          $('.swiper-wrapper>.swiper-slide').each(function (i, item) {
+            var $item = $(item);
+            var imgSrc = $item.data(isSmallScreen ? 'image-s' : 'image-l');
+            console.log(imgSrc);
+            if (isSmallScreen) {
+              $(item).html('<img src="' + imgSrc + '" alt="small" class="responsive-img">');
+            } else {
+              $(item).html('<img src="' + imgSrc + '" alt="big" class="responsive-img">')
+            }
+          })
+        }
+
+        $(window).on('resize', resize).trigger('resize');
+      })

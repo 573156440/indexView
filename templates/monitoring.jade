@@ -1,0 +1,50 @@
+doctype html
+html
+  include _layout/head
+
+  body
+    include _layout/nav
+    .row
+      .col.hoverable.center.s12.mon-top-msg
+        .mon-title.left-align 机房动环监控
+          .mon-desc 针对各类机房中的动力设备及环境变量进行集中监控,即:动力环境监控[1].
+        img.responsive-img.mon-head-img(src='../img/monitor/head.png')
+    .container
+      .row
+        .col.s12.m9.l9.mon-comm
+          span CLC机房动环监控系统是一款高可靠、稳定的模块化的智能数据中心基础设施监控系统。
+      .row
+        .col.s12.m9.l9.mon-two-content
+          .content
+            img.responsive-img.mon-two-img(src='../img/monitor/two.png')
+      .row
+        .col.s12.m9.l9.mon-comm
+          span 此系统通过实时与基础设施通讯交互、视频监控等多种方式，通过智能分析通过智能控制， 通过人性化的展现方式，
+              | 让数据中心运维人员及时了解数据中心的健康状况，及时让数据中 心处于健康运营中。
+              | 此系统通过实时与基础设施通讯交互、视频监控等多种方式，通过智能分析通过智能控制， 通过人性化的展现方式，
+              | 让数据中心运维人员及时了解数据中心的健康状况，及时让数据中 心处于健康运营中。
+      .row
+        .col.s12.m9.l9.mon-comm
+          h5 了解数据中心的健康
+      .row
+        .col.s12.m9.l9.mon-comm
+          img.responsive-img(src='../img/monitor/three.png')
+      .row
+        .col.s12.m9.l9.mon-comm
+          span 一套完善的综合动力环境监控系统可以对分布的各个独立的动力设备和机房环境、机房安保监控对象进行遥测、遥
+            | 信等采集，实时监视系统和设备、安保的运行状态，记录和处理相关数据，及时侦测故障，并作必要的遥控、遥调
+            | 操作，适时通知人员处理；实现机房的少人、无人值守，以及电源、空调的集中监控维护管理，提高供电系统的可
+            | 靠性和通信设备的安全性，为机房的管理自动化、运行智能化和决策科学化提供有力的技术支持。
+      .row
+        .col.s12.m9.l9.mon-comm
+          h5 设备管理在不断更新
+      .row
+        .col.s12.m9.l9.mon-comm
+          img.responsive-img(src='../img/monitor/four.png')
+    include _layout/footer
+    script.
+      $(document).ready(function () {
+        $("nav").css({
+          "background-color":"#015aa0"
+        });
+      });

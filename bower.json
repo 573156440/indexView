@@ -1,0 +1,21 @@
+{
+  "name": "clc.www",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "cz <ccz@clcdata.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Materialize": "materialize#^0.97.6",
+    "Swiper": "swiper#^3.3.1"
+  }
+}
